@@ -1,3 +1,17 @@
+const header = document.querySelector('#header');
+
+window.addEventListener('scroll', (e) => {
+
+    if (window.scrollY > 90) {
+        header.style.top = 0;
+    }
+    else{
+        header.style.top = '-500px';
+    }
+})
+
+
+
 // Select all the elements in the HTML page
 // and assign them to a variable
 let now_playing = document.querySelector(".now-playing");

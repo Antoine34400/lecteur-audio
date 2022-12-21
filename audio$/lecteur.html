@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Simple Music Player</title>
+  <title>Lecteur Audio</title>
   <!-- Load FontAwesome icons -->
   <link rel="stylesheet"
         href=
@@ -11,6 +11,15 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+  <header>
+    <nav id="header">
+        <div id="box_nav">
+            <h1 class="color_diff">MP'ROY</h1>
+            <a href="../index.html"><img src="../image/logo.png" class="logo" alt="logo du site"></a>
+        </div>
+        <a href="mpecoute.html"><h2>MP'ECOUTE</h2></a>
+    </nav>
+</header>
   <div class="player">
  
     <!-- Define the section for displaying details -->
@@ -50,8 +59,15 @@
       <i class="fa fa-volume-up"></i>
     </div>
   </div>
- 
+
+  <footer>
+    <nav id="footer">
+        <h1 class="color_diff">Une remarque ?</h1><br>
+        <input type="text" name="remarque_user" max="25" placeholder="votre remarque..." id="remarque_user"><br>
+        <input type="submit" id="btn_">
+    </nav>
+</footer>
+</body>
   <!-- Load the main script for the player -->
   <script src="main.js"></script>
-</body>
 </html>
