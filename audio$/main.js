@@ -10,7 +10,10 @@ window.addEventListener('scroll', (e) => {
     }
 })
 
-
+/**
+ * mpecoute
+ */
+//
 
 // Select all the elements in the HTML page
 // and assign them to a variable
@@ -27,7 +30,7 @@ let seek_slider = document.querySelector(".seek_slider");
 let volume_slider = document.querySelector(".volume_slider");
 let curr_time = document.querySelector(".current-time");
 let total_duration = document.querySelector(".total-duration");
- 
+let btn_return = document.getElementById('btn_return');
 // Specify globally used values
 let track_index = 0;
 let isPlaying = false;
@@ -51,7 +54,7 @@ let track_list = [
     path: "musique/hier_encore.mp3"
   },
   {
-    name: "Lettre à la republique.",
+    name: "Lettre a la republique.",
     artist: "Kery James",
     image: "image/lettre_republique.jpg",
     path: "musique/lettre_republique.mp3",
@@ -61,6 +64,24 @@ let track_list = [
     artist: "xxxtentacion",
     image: "image/moonlight.jpg",
     path: "musique/moonlight.mp3",
+  },
+  {
+    name : "Gazolina",
+    artist : "Tiakola ft. Rsko",
+    image: "image/images.jpg",
+    path: "musique/tiakola.mp3"
+  },
+  {
+    name: "Dragovic",
+    artist: "Maes",
+    image: "image/maes.jpg",
+    path: "musique/maes.mp3"
+  },
+  {
+    name: "School",
+    artist: "Supertramp",
+    image: "image/supertramp.jpg",
+    path: "musique/supertramp.mp3"
   },
 ];
 
@@ -204,6 +225,13 @@ function loadTrack(track_index) {
       total_duration.textContent = durationMinutes + ":" + durationSeconds;
     }
   }
+
+  btn_return.addEventListener('click', () => {
+    pauseTrack()
+    isPlaying = false;
+    curr_track.currentTime = 0;
+    return resetValues();
+  })
 
   // Load the first track in the tracklist
 loadTrack(track_index);

@@ -32,6 +32,7 @@ body {
   }
 
   #footer{
+    margin-top: 70px;
     height: 130px;
     width: 100%;
     display: flex;
@@ -101,6 +102,16 @@ body {
    
     /* Smoothly transition the opacity */
     transition: opacity .2s;
+  }
+
+  #btn_return{
+    width: 125px;
+    height: 25px;
+    background-color: var(--primary-light);
+    border-radius: 20px;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: bold;
   }
    
   /* Change the opacity when mouse is hovered */

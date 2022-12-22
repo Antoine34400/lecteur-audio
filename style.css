@@ -193,9 +193,9 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    transition: 1s ease;
-    top: -500px; 
-    position: fixed;
+    transition: 0.6s ease;
+    top: 0px; 
+    /* position: fixed; */
   }
   
   main{
@@ -243,6 +243,7 @@ a {
   .color_diff{
     color: var(--other);
     font-size: 1.3em;
+    margin-top: 10px;
   }
 
   #remarque_user{
@@ -252,7 +253,9 @@ a {
     border-radius: 15px;
     width: 250px;
     height: 25px;
-    transition: 3s ease;
+    transition: 1s ease;
+    margin-top: 10px;
+    margin-bottom: 10px;  
   }
 
   #lecteur{
@@ -304,7 +307,7 @@ a {
     transition: 0.5s ease; 
   }
 
-  /* #btn_:hover{
+  #btn_:hover{
     opacity: 0.75;
     cursor: grab;
   }
@@ -316,8 +319,11 @@ a {
     border-radius: 15px;
     width: 200px;
     height: 20px;
-  } */
-  
+  }
+  .margin{
+    margin-bottom: 23px;
+  }
+
   #footer{
     height: 130px;
     width: 100%;
@@ -347,6 +353,11 @@ a {
     align-items: center;
   }
 
+  .diff{
+    border-top: 1px solid var(--primary-color);
+    margin-top: 30px;
+  }
+
   .artiste_play{
     height: 200px;
     width: 1300px;
@@ -365,7 +376,7 @@ a {
   .image_play{
     height: 25px;
     width: 25px;
-
+    margin-top: 30px;
   }
 
   .cover_fav{
@@ -379,4 +390,24 @@ a {
   .fav{
     height: 20px;
     width: 20px;
+  }
+
+  #block{
+    background-color: var(--primary-color);
+    width: 200px;
+    height: 35px;
+    color: var(--primary-light);
+    font-size: 1.3em;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .play{
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
   }
