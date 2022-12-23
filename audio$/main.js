@@ -66,7 +66,7 @@ let track_list = [
     path: "musique/moonlight.mp3",
   },
   {
-    name : "Gazolina",
+    name : "Gasolina",
     artist : "Tiakola ft. Rsko",
     image: "image/images.jpg",
     path: "musique/tiakola.mp3"
@@ -82,6 +82,18 @@ let track_list = [
     artist: "Supertramp",
     image: "image/supertramp.jpg",
     path: "musique/supertramp.mp3"
+  },
+  {
+    name: "Del mar",
+    artist: "Ozuna ft Doja cat & Sia",
+    image: "image/delmar.png",
+    path: "musique/ozuna.mp3",
+  },
+  {
+    name: "Journee",
+    artist: "Niska ft Tiakola",
+    image: "image/journe.jpg",
+    path: "musique/niska.mp3",
   },
 ];
 
